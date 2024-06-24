@@ -1,6 +1,7 @@
 {
-  "$schema":"../schemas/subject-override.json",
+  "$schema": "../schemas/subject-override.json",
   "id": "abd",
+  "updatedAt": 1719225111900,
   "data": [
     {
       "question": "Załóżmy, że w bazie danych PostgreSQL mamy tabelkę wykorzystującą typ danych jsonb. Czy możemy założyć indeks, który przyspieszyłby zapytanie pokazane poniżej (zakładając , że tabelka ma odpowiednią ilość danych i zapytanie jest selektywne):\n`SELECT * FROM books WHERE data->'published' = 'false';`",
@@ -455,12 +456,44 @@
       "isMarkdown": true,
       "comments": [],
       "answers": [
-        { "answer": "SELECT", "correct": false },
-        { "answer": "INSERT", "correct": false },
-        { "answer": "UPDATE", "correct": false },
-        { "answer": "DELETE", "correct": false }
+        {
+          "answer": "SELECT",
+          "correct": false
+        },
+        {
+          "answer": "INSERT",
+          "correct": false
+        },
+        {
+          "answer": "UPDATE",
+          "correct": false
+        },
+        {
+          "answer": "DELETE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Zaznacz prawdziwe zdanie dotyczące PostgreSQL (do rozwiazania)",
+      "isMarkdown": false,
+      "answers": [
+        {
+          "answer": "Rola postgresql jest domyślna",
+          "correct": false,
+          "isMarkdown": false
+        },
+        {
+          "answer": "Rola postgres jest domyślna",
+          "correct": true,
+          "isMarkdown": false
+        },
+        {
+          "answer": "Rola admin jest domyślna",
+          "correct": false,
+          "isMarkdown": false
+        }
       ]
     }
-  ],
-  "updatedAt": 1657199812909
+  ]
 }
